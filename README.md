@@ -14,7 +14,7 @@ The design extends a baseline HLS implementation by applying optimization techni
 
 The goal is to accelerate matrix multiplication using FPGA hardware and compare results against CPU-based implementations from previous labs.
 
----
+
 
 ## Project Objectives
 
