@@ -17,40 +17,35 @@ The goal is to accelerate matrix multiplication using FPGA hardware and compare 
 
 
 ## Project Objectives
-
 - Convert C/C++ matrix multiplication code into synthesizable FPGA hardware  
 - Improve throughput using HLS optimization pragmas  
 - Compare hardware resource usage and performance against CPU versions  
 - Demonstrate FPGA acceleration principles  
 
----
+
 
 ## Target Platform
-
 - **Board:** AUP-ZU3  
 - **FPGA Family:** Zynq UltraScale+ MPSoC  
 - **Part:** xczu3eg-sbva484-1-e  
 - **Toolchain:** AMD Vitis 2025.2  
 
----
+
 
 ## Files Included
-
 - **custom_matmul.cpp** – Final HLS accelerator source code  
 - **report.pdf** – Final project report  
 - **screenshots/** – Synthesis and resource screenshots  
 - **README.md** – Project documentation  
 
----
+
 
 ## Accelerator Features
 
 ### Baseline Design
-
 Standard matrix multiplication implemented in HLS.
 
 ### Custom Optimized Design
-
 Uses the following optimization directives:
 
 - PIPELINE  
@@ -63,7 +58,7 @@ Additional enhancements:
 - Parallel multiply-accumulate operations  
 - Reduced memory bottlenecks  
 
----
+
 
 ## Resource Utilization
 
@@ -75,10 +70,9 @@ Additional enhancements:
 | LUT | 2,331 | 11,617 |
 | URAM | 0 | 0 |
 
----
+
 
 ## CPU Comparison (Lab 2)
-
 | Method | N=16 GFLOPS | N=32 GFLOPS |
 |--------|------------|------------|
 | Naive | 0.0313 | 0.0319 |
@@ -87,10 +81,9 @@ Additional enhancements:
 
 The FPGA accelerator provides a more parallel compute model than CPU execution.
 
----
+
 
 ## How to Run in Vitis HLS
-
 1. Open AMD Vitis 2025.2  
 2. Create a new HLS component  
 3. Select target part: **xczu3eg-sbva484-1-e**  
@@ -98,27 +91,25 @@ The FPGA accelerator provides a more parallel compute model than CPU execution.
 5. Set top function: **custom_matmul_kernel**  
 6. Run **C Synthesis**
 
----
+
 
 ## Results
-
 The custom design synthesized successfully and demonstrated increased parallelism at the cost of higher FPGA resource utilization.
 
 This reflects the standard FPGA tradeoff:
 
 **More hardware resources = More performance potential**
 
----
+
 
 ## Future Improvements
-
 - Systolic array architecture  
 - Floating-point support  
 - DMA transfers  
 - Real hardware timing benchmarks  
 - GPU comparison  
 
----
+
 
 ## Author
 
