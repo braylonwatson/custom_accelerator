@@ -33,10 +33,10 @@ The goal is to accelerate matrix multiplication using FPGA hardware and compare 
 - **Toolchain:** AMD Vitis 2025.2
 
 ---
-
+```markdown
 ## Files Included
 
-```markdown
+
 custom_matmul.cpp        -> Final HLS accelerator source code
 report.pdf               -> Final project report
 screenshots/             -> Synthesis and resource screenshots
