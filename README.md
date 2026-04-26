@@ -126,6 +126,4 @@ Braylon Watson
 
 ---
 
-## License
 
-Educational / Academic Use
