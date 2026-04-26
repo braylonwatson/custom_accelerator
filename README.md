@@ -100,4 +100,4 @@ Real hardware timing benchmarks
 GPU comparison
 Author
 
-Your Name
+Braylon Watson
