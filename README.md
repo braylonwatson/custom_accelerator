@@ -34,7 +34,7 @@ The goal is to accelerate matrix multiplication using FPGA hardware and compare 
 
 ## Files Included
 - **custom_matmul.cpp** – Final HLS accelerator source code  
-- **report.pdf** – Final project report  
+- **report.pdf** – Project report  
 - **screenshots/** – Synthesis and resource screenshots  
 - **README.md** – Project documentation  
 
